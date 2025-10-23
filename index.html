@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+
+    <title>Clima Tempo</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Caixa de busca -->
+        <div class="search-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" placeholder="Digite o local">
+
+            <!-- Botão de busca -->
+            <button class="search-btn">
+                <i class="fas fa-search"></i>
+                <span>Buscar</span>
+            </button>
+
+            <!-- Botão de localização intuitivo -->
+            <button class="location-btn" title="Usar localização">
+                <i class="fas fa-location-dot"></i>
+                <span class="location-text">Minha localização</span>
+            </button>
+        </div>
+
+        <!-- Mensagem de erro -->
+        <div class="not-found">
+            <img src="image/404.png" alt="Não encontrado">
+            <p>Oops! Localização não encontrada :/</p>
+        </div>
+
+        <!-- Informações do clima -->
+        <div class="weather-box">
+            <img src="" alt="Ícone do clima">
+            <p class="temperatura"></p>
+            <p class="description"></p>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fas fa-tint"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidade</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fas fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Velocidade do vento</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="index.js"></script>
+</body>
+
+</html>
